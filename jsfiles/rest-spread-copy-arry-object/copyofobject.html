@@ -1,0 +1,16 @@
+<script>
+
+    var obj={a:10,b:20,c:30}
+    var copy=obj;
+    console.log(obj)
+    console.log(copy)
+    console.log("====================")
+    copy.d=40
+    console.log(obj)
+    console.log(copy)
+    console.log("im solution ====================")
+    var copy={...obj};
+    copy.e=50
+    console.log(obj)
+    console.log(copy)
+</script>

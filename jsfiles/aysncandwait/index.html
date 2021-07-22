@@ -1,0 +1,15 @@
+<script>
+
+ async function adam() { 
+
+ const data=await fetch('https://api.github.com/users')
+
+ const data2= await data.json();
+//const data="hello"
+return data2
+ }
+
+var fun=adam()
+fun.then((sonu)=>{console.log(sonu)})
+</script>
+

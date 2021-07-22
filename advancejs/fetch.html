@@ -1,0 +1,67 @@
+
+<script>
+
+
+   async  function show() {
+    console.log("startr working")
+    const response =await fetch('https://api.github.com/users')
+    console.log("im after api call")
+
+var users= await response.json()
+
+    return users
+    
+    }
+    console.log("ggggggg")
+  var d= show()
+  console.log(d)
+    d.then((data)=>{console.log(data)})
+    console.log("well done")
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+
+function show() {
+console.log("startr working")
+const response = fetch('https://api.github.com/users').then((resp)=>{
+    return resp.text()
+}).then((data)=>{console.log("second",data)})
+console.log("im after api call")
+return response 
+
+}
+// show()
+
+</script>
+
+
+

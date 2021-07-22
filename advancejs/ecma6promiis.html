@@ -1,0 +1,29 @@
+<script>
+
+    function fun() {
+
+return new Promise(function(resolve,reject) {
+
+setTimeout(()=>{
+const err=true;
+if(!err){
+    console.log("u got ur gift ur promiss resoved")
+    resolve();
+}
+else{
+   
+    reject()
+}
+
+
+},1000)
+});
+
+    }
+ fun().then(function() {
+    console.log("tq")
+ }).catch(function() {
+    console.log("not resoved")
+ })
+
+</script>

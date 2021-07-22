@@ -1,0 +1,59 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "students": [
+    {
+      "name": "salman",
+      "classs": "acting",
+      "subject": "memiking",
+      "id": 7
+    },
+    {
+      "name": "salman",
+      "classs": "acting",
+      "subject": "memiking",
+      "id": 8
+    }
+  ],
+  "studentsdata": [
+    {
+      "id": 1,
+      "name": "sonu",
+      "email": "sonu@gmail.com",
+      "address": "india"
+    },
+    {
+      "name": "sidrth",
+      "id": 2,
+      "email": "sonu@gmail.com",
+      "address": "india"
+    },
+    {
+      "name": "salman",
+      "id": 3,
+      "email": "tt@gmail.com",
+      "address": "ghhghg"
+    },
+    {
+      "id": 4,
+      "name": "preeti",
+      "email": "sonu@gmail.com",
+      "address": "india"
+    }
+  ]
+}

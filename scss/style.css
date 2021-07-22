@@ -1,0 +1,17 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1 {
+  font-size: 110px;
+  background-color: #5e1717;
+}
+
+h2 {
+  font-size: 110px;
+  background-color: #53bd22;
+}
+/*# sourceMappingURL=style.css.map */

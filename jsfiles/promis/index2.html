@@ -1,0 +1,36 @@
+<script>
+function party(){
+
+   
+    return  new Promise(function(resolved,reject) { 
+    
+    setTimeout(function() {  
+const err=false;
+
+if(!err){
+console.log("tq blessy for lessy")
+resolved();
+}else{
+console.log("belly y cont u go to jail for us");
+reject();
+}
+        
+     
+    },3000);
+ })
+
+ 
+ 
+    
+}
+party().then(function() {
+    console.log("wow magical lassy")
+}).catch(function() {
+
+    console.log("no lassy vary bad")
+})
+   
+    
+    
+    </script>
+    

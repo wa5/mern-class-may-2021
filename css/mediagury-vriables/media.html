@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+    <style>
+.box{
+font-size: 72px;
+text-align: center;
+background-color: indianred;
+color: white;
+display: none;
+}
+
+@media (max-width:300px) {
+    #box-1{
+        display: block;
+        background-color: violet;
+    }
+    
+}
+@media (max-width:500px) and (min-width:300px) {
+    #box-2{
+        display: block;
+        background-color: rgb(139, 238, 130);
+    }
+}
+
+@media (max-width:800px) and (min-width:500px) {
+    #box-3{
+        display: block;
+        background-color: rgb(166, 197, 163);
+    }
+}
+@media only screen and(max-width:1200px)  and (min-width:800px){
+    #box-4{
+        display: block;
+        background-color: rgb(166, 197, 163);
+    }
+    
+}
+    </style>
+
+
+
+       <div class="container">
+
+      <div class="box" id="box-1">i m phone screen 300px</div>
+      <div class="box" id="box-2">i m tablet 500px</div>
+      <div class="box" id="box-3">i m system 800px</div>
+      <div class="box" id="box-4">i m large screen 1200px</div>
+       </div> 
+     
+    </body>
+</html>

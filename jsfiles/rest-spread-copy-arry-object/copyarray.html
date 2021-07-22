@@ -1,0 +1,23 @@
+<script>
+var arr1=[1,2,3]
+console.log("im original",...arr1)
+
+var arr2=arr1
+
+arr2.push(4);
+console.log(...arr1)
+console.log(...arr2)
+
+console.log("----------------------------------")
+console.log("im solution")
+
+var aa1=[1,2,3]
+console.log("im original",...aa1)
+
+var aa2=[...aa1]
+
+aa2.push(4);
+
+console.log(...aa1)
+console.log(...aa2)
+</script>

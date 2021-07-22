@@ -1,0 +1,29 @@
+<script>
+
+var ari=[1,2,3,4]
+ari.push(5)
+var ar2=[...ari]
+ar2.push(6)
+// console.log(ari)
+// console.log(ar2)
+
+
+
+function add(...baba) {
+var sum=0;
+for(let arg of baba)sum+=arg
+
+    return sum;
+}
+console.log(add(5))
+console.log(add(5,2))
+console.log(add(5,2,1))
+
+
+
+let arr=[5,7,8]
+
+alert(Math.max(...arr))
+
+
+</script>
