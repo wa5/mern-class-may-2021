@@ -18,8 +18,7 @@ const bodyparser=require('body-parser')
 //pare json
 app.use(bodyparser.json())
 app.use(bodyparser.urlencoded({extended:false}))
-const {mobile,registeration}=require('./src/routers');
-const { UserRegisteration } = require('./src/models');
+const {mobile}=require('./src/routers');
 
 //databse connection
 require('./config/db.config')
@@ -29,21 +28,37 @@ require('./config/db.config')
 
 
 
+const checkUrl = (req, res, next) => {
+    console.log("current route is", req.originalUrl);
+    next();
+}
 
-
-app.get('/', (req, res) => {
-    res.render("index")
+app.use(checkUrl);
+app.get('/hello', (req, res) => {
+    res.send("common page")
 })
-app.post('/', (req, res) => {
-    const sonu=new UserRegisteration({name:req.body.name,email:req.body.email,password:req.body.password})
-    sonu.save()
-    res.render("index",{name:req.body.name})
+
+app.get('/hr', (req, res) => {
+    res.send("common page")
 })
 
-app.use('/api/registeration',registeration)
+//first way passing value
+// app.get('/api/mobile',(req,res)=>{
+//     res.render('mobiles',{mname:"samsung"})
+// })
+//second way passing value
+// app.get('/api/mobile/:name',(req,res)=>{
+
+//     res.render('mobiles',{mname:req.params.name})
+// })
 
 
+app.get('/api/favmobile', (req, res) => {
 
+    res.render('favmobile')
+})
+app.use('/api/mobile', mobile)
+app.use('/api/mobile', mobile)
 
 
 
